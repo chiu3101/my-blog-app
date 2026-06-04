@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import PostForm from "./PostForm";
 import PostList from "./PostList";
+import VirtualDOMExplanation from "../../react_concepts/VirtualDOMExplanation";
 
 /**
  * CONCEPT: Component Composition & State Management
@@ -134,6 +135,9 @@ export default function App() {
         * Shows "Loading..." while loading=true, otherwise shows PostList with posts data.
         */}
       {loading ? <p>Loading...</p> : <PostList posts={posts} deletePost={deletePost} />}
+
+      <hr style={{ margin: "3rem 0", borderColor: "#eee" }} />
+      <VirtualDOMExplanation />
     </div>
   );
 }

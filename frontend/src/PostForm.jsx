@@ -7,11 +7,7 @@ import React from "react";
  * This makes it reusable and easy to test.
  */
 export default function PostForm({
-  /**
-   * CONCEPT: Props Destructuring
-   * Instead of receiving a single 'props' object, we destructure individual properties.
-   * Makes code cleaner and shows exactly what data this component needs.
-   */
+  title,
   setTitle,
   author,
   setAuthor,
